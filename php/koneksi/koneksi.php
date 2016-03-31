@@ -3,5 +3,5 @@
     $host = "localhost";
     $db = "pemilu";
     $pass = "1234";
-    mysql_connect($host,$user,$pass) or die("Gagal Koneksi MySql");
-    mysql_select_db($db) or die("Gagal Koneksi Database");
+    $conn =mysqli_connect($host,$user,$pass) or die("Gagal Koneksi MySql");
+    mysqli_select_db($conn,$db) or die("Gagal Koneksi Database");

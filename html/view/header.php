@@ -44,20 +44,19 @@
     <link rel="apple-touch-icon-precomposed" href="assets/img/apple-touch-icon-precomposed.png"/>
 
 </head>
-
 <body>
 <div id="navigation">
     <div class="container-fluid">
         <a href="#" id="brand">PEMILU</a>
         <ul class='main-nav'>
-            <li class='active'>
+            <li>
                 <a href="index.html">
                     <i class="icon-home"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li>
-                <a href="#" <?php if($pml == "partai"){echo "class='active'";} ?>>
+            <li <?php if($pml == "partai"){echo "class='active'";} ?>>
+                <a href="#" >
                     <i class="icon-edit"></i>
                     <span>Partai</span>
                 </a>
